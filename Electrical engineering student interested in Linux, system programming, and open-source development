@@ -1,5 +1,0 @@
-# Mageia 9 OS Installation (Summary)
-
-Mageia 9 was installed using VirtualBox and a bootable USB created with Balena Etcher. The installation steps involved ISO flashing,
-selecting language, file system configuration (ext4), and desktop setup (Plasma). Mageia was chosen for its user-friendly GUI, stability 
-and suitability for system-level tasks. No issues occurred during installation.
