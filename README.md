@@ -10,10 +10,3 @@ The `vfork()` system call was implemented to demonstrate lightweight process cre
 
 This project explores installing Mageia Linux and implementing the `vfork()` system call for efficient process creation.
 
-## 📁 Project Sections
-
-- [Mageia OS Installation Summary](./OS_Installation.md)
-- [`vfork()` System Call Explanation](./vfork_SystemCall.md)
-- [System Call Program in C](./vfork_program.c)
-
-📄 [Full PDF Documentation](./OSSP_Individual_bereket_taddele_1600798_A-2.pdf)
