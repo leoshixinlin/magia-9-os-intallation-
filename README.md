@@ -1,26 +1,7 @@
-# magia-9-os-intallation-
-1. Mageia Installation in Virtual Environment
+# OSSP Project – Mageia Linux & `vfork()` System Call
 
-To begin, Mageia was installed in a virtual environment using VirtualBox and a bootable Mageia ISO. The installation process included downloading the ISO, flashing it to a USB with Balena Etcher, and running it through a virtual machine. Configuration steps included selecting the language, disk partitioning, desktop environment setup (Plasma), and user account creation.
+## A. Mageia OS Installation  
+Mageia 9 was installed in a virtual machine using Balena Etcher and VirtualBox. The setup involved flashing the ISO, selecting the desktop environment, setting a root password, and enabling the firewall. Mageia’s ext4 filesystem offers stability and performance. The installation was smooth and user-friendly.
 
-Key highlights of the installation:
-
-    Filesystem: Ext4 was chosen for its stability and journaling capabilities.
-
-    System Requirements: Minimum 4GB RAM, Intel i5 processor, and 20GB disk space.
-
-    Outcome: The installation was smooth, with no major issues encountered. Mageia proved user-friendly with a clean interface suitable for system-level development.
-
-2. Implementing the vfork() System Call
-
-The core of this project involved using the vfork() system call in a C program to demonstrate efficient process creation. Unlike fork(), vfork() creates a child process that shares the parent's memory space and suspends the parent until the child exits or executes a new program.
-
-Key behavior in the program:
-
-    The child process was created using vfork().
-
-    It immediately used execlp() to execute the ls command.
-
-    The parent process waited until the child finished, showcasing low-overhead and fast context switching.
-
-This implementation in Mageia effectively demonstrated how vfork() can be used in resource-constrained environments where quick process creation is needed, making it ideal for shells and lightweight utilities.
+## B. `vfork()` System Call Implementation  
+The `vfork()` system call was implemented to demonstrate lightweight process creation. Unlike `fork()`, it allows the child to share memory with the parent until `exec()` or `_exit()` is called. This makes it faster for launching new programs. It’s ideal for constrained environments and efficient process management.
